@@ -1,0 +1,65 @@
+
+.intro{
+    height: 90vh;
+    width: 100vw;
+    display: flex;
+}
+.intro-left{
+    width: 50%;
+    height: 100%;
+    background: $secondary-colour;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 4rem;
+
+    &__heading{
+        font-size: 5rem;
+        color: $heading-colour;
+        font-family: $heading-font;
+        font-weight: 900;
+        letter-spacing: $letter-spacing;
+    }
+    &__paragraph{
+        font-size: 1.8rem;
+        line-height: 3rem;
+        width: 35ch;
+        padding: 2rem 0;
+        color: $text-colour;
+        font-family: $text-font;
+    }
+    
+}
+
+
+.intro-right{
+    width: 50%;
+    height: 100%;
+    background: $tertiary-colour;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+    .right-top{
+        height: 40%;
+        width: 50%;
+        // background: #333;
+        background: url(../img/top-right.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-position-y: 50%;
+    }
+    .right-bottom{
+        height: 40%;
+        width: 50%;
+        background: lightgoldenrodyellow;
+        background: url(../img/bottom-right.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position-x: 50%;
+        background-position-y: 50%;
+    }
+}
