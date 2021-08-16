@@ -32,7 +32,7 @@ nav {
     letter-spacing: uppercase; }
   nav ul {
     list-style: none;
-    display: flex; }
+    display: none; }
   nav li {
     font-size: 2rem;
     letter-spacing: 0.5rem;
@@ -41,15 +41,31 @@ nav {
     color: #101010;
     font-family: "Oswald", sans-serif;
     letter-spacing: uppercase; }
+  nav .nav-icon img {
+    width: 35px;
+    height: 35px; }
 
+/* Medium Devices (Tablets) */
+@media only screen and (min-width: 600px) and (max-width: 992px) {
+  nav ul {
+    display: flex; }
+  nav .nav-icon {
+    display: none; } }
+/* Large Devices (Laptop/Desktop) */
+@media only screen and (min-width: 992px) and (max-width: 1920px) {
+  nav ul {
+    display: flex; }
+  nav .nav-icon {
+    display: none; } }
 .intro {
-  height: 90vh;
+  height: 190vh;
   width: 100vw;
-  display: flex; }
+  display: flex;
+  flex-direction: column; }
 
 .intro-left {
-  width: 50%;
-  height: 100%;
+  width: 100%;
+  height: 55%;
   background: lightcyan;
   display: flex;
   align-items: flex-start;
@@ -61,34 +77,37 @@ nav {
     color: tomato;
     font-family: "Oswald", sans-serif;
     font-weight: 900;
-    letter-spacing: 0.5rem; }
+    letter-spacing: 0.5rem;
+    padding-top: 1em;
+    line-height: 6rem; }
   .intro-left__paragraph {
     font-size: 1.8rem;
     line-height: 3rem;
-    width: 35ch;
+    width: 27ch;
     padding: 2rem 0;
     color: #101010;
     font-family: "Catamaran", sans-serif; }
 
 .intro-right {
-  width: 50%;
-  height: 100%;
+  width: 100%;
+  height: 70%;
   background: salmon;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-around; }
+  justify-content: space-evenly; }
   .intro-right .right-top {
-    height: 40%;
-    width: 50%;
+    height: 42%;
+    width: 80%;
     background: url(../img/top-right.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    background-position-y: 50%; }
+    background-position-y: 65%;
+    background-position-x: 100%; }
   .intro-right .right-bottom {
-    height: 40%;
-    width: 50%;
+    height: 42%;
+    width: 80%;
     background: lightgoldenrodyellow;
     background: url(../img/bottom-right.jpg);
     background-size: cover;
@@ -96,6 +115,50 @@ nav {
     background-position-x: 50%;
     background-position-y: 50%; }
 
+/* Medium Devices (Tablets) */
+@media only screen and (min-width: 600px) and (max-width: 992px) {
+  .intro {
+    height: 100vh;
+    height: 90vh;
+    flex-direction: row; }
+
+  .intro-left {
+    width: 50%;
+    height: 100%; }
+    .intro-left__paragraph {
+      width: 30ch; }
+
+  .intro-right {
+    width: 50%;
+    height: 100%; }
+    .intro-right .right-top {
+      height: 40%;
+      width: 50%; }
+    .intro-right .right-bottom {
+      height: 40%;
+      width: 50%; } }
+/* Large Devices (Laptop/Desktop) */
+@media only screen and (min-width: 992px) and (max-width: 1920px) {
+  .intro {
+    height: 100vh;
+    height: 90vh;
+    flex-direction: row; }
+
+  .intro-left {
+    width: 50%;
+    height: 100%; }
+    .intro-left__paragraph {
+      width: 35ch; }
+
+  .intro-right {
+    width: 50%;
+    height: 100%; }
+    .intro-right .right-top {
+      height: 40%;
+      width: 50%; }
+    .intro-right .right-bottom {
+      height: 40%;
+      width: 50%; } }
 .intro-left__btn {
   background: none;
   border: none;
@@ -103,6 +166,41 @@ nav {
   padding: 1rem 2rem;
   background: mediumaquamarine;
   font-family: "Catamaran", sans-serif;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  margin-bottom: 4rem; }
+
+footer {
+  width: 100vw;
+  height: 25vh;
+  background: papayawhip;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4em; }
+  footer ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column; }
+  footer li {
+    font-size: 1.5rem;
+    letter-spacing: 0.5rem;
+    padding: 0.5rem;
+    text-transform: uppercase;
+    color: #101010;
+    font-family: "Oswald", sans-serif;
+    letter-spacing: uppercase; }
+  footer .logo-img {
+    width: 70px;
+    height: 70px;
+    filter: invert(80%) sepia(48%) saturate(4124%) hue-rotate(312deg) brightness(100%) contrast(92%); }
+
+/* Medium Devices (Tablets) */
+@media only screen and (min-width: 600px) and (max-width: 992px) {
+  footer {
+    height: 15vh; } }
+/* Large Devices (Laptop/Desktop) */
+@media only screen and (min-width: 992px) and (max-width: 1920px) {
+  footer {
+    height: 15vh; } }
 
 /*# sourceMappingURL=style.css.map */

@@ -29,7 +29,7 @@ nav{
     }
     ul{
         list-style: none;
-        display: flex;
+        display: none;
         
     }
     li{
@@ -40,5 +40,33 @@ nav{
         color: $text-colour;
         font-family: $heading-font;
         letter-spacing: $text-case
+    }
+    .nav-icon img{
+        width: 35px;
+        height: 35px;
+    }
+}
+
+/* Medium Devices (Tablets) */
+@media only screen and (min-width: 600px) and (max-width: 992px){
+    nav{
+        ul{
+            display: flex;
+        }
+        .nav-icon{
+            display: none;
+        }
+    }
+}
+
+/* Large Devices (Laptop/Desktop) */
+@media only screen and (min-width: 992px) and (max-width: 1920px){
+    nav{
+        ul{
+            display: flex;
+        }
+        .nav-icon{
+            display: none;
+        }
     }
 }

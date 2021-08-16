@@ -1,12 +1,13 @@
 
 .intro{
-    height: 90vh;
+    height: 190vh;
     width: 100vw;
     display: flex;
+    flex-direction: column;
 }
 .intro-left{
-    width: 50%;
-    height: 100%;
+    width: 100%;
+    height: 55%;
     background: $secondary-colour;
     display: flex;
     align-items: flex-start;
@@ -20,11 +21,13 @@
         font-family: $heading-font;
         font-weight: 900;
         letter-spacing: $letter-spacing;
+        padding-top: 1em;
+        line-height: 6rem;
     }
     &__paragraph{
         font-size: 1.8rem;
         line-height: 3rem;
-        width: 35ch;
+        width: 27ch;
         padding: 2rem 0;
         color: $text-colour;
         font-family: $text-font;
@@ -34,32 +37,93 @@
 
 
 .intro-right{
-    width: 50%;
-    height: 100%;
+    width: 100%;
+    height: 70%;
     background: $tertiary-colour;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
 
     .right-top{
-        height: 40%;
-        width: 50%;
+        height: 42%;
+        width: 80%;
         // background: #333;
         background: url(../img/top-right.jpg);
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
-        background-position-y: 50%;
+        background-position-y: 65%;
+        background-position-x: 100%;
     }
     .right-bottom{
-        height: 40%;
-        width: 50%;
+        height: 42%;
+        width: 80%;
         background: lightgoldenrodyellow;
         background: url(../img/bottom-right.jpg);
         background-size: cover;
         background-repeat: no-repeat;
         background-position-x: 50%;
         background-position-y: 50%;
+    }
+}
+
+/* Medium Devices (Tablets) */
+@media only screen and (min-width: 600px) and (max-width: 992px){
+    .intro{
+        height: 100vh;
+        height: 90vh;
+        flex-direction: row;
+    }
+    .intro-left{
+        width: 50%;
+        height: 100%;
+        
+        &__paragraph{
+            width: 30ch;
+        }
+    }
+    .intro-right{
+        width: 50%;
+        height: 100%;
+
+        .right-top{
+            height: 40%;
+            width: 50%;
+        }
+        .right-bottom{
+            height: 40%;
+            width: 50%;
+        }
+    }
+}
+
+/* Large Devices (Laptop/Desktop) */
+@media only screen and (min-width: 992px) and (max-width: 1920px){
+    .intro{
+        height: 100vh;
+        height: 90vh;
+        flex-direction: row;
+    }
+    .intro-left{
+        width: 50%;
+        height: 100%;
+        
+        &__paragraph{
+            width: 35ch;
+        }
+    }
+    .intro-right{
+        width: 50%;
+        height: 100%;
+
+        .right-top{
+            height: 40%;
+            width: 50%;
+        }
+        .right-bottom{
+            height: 40%;
+            width: 50%;
+        }
     }
 }

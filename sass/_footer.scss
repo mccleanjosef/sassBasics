@@ -1,0 +1,44 @@
+footer{
+    width: 100vw;
+    height: 25vh;
+    background: $primary-colour;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4em;
+
+    ul{
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        
+    }
+    li{
+        font-size: 1.5rem;
+        letter-spacing: $letter-spacing;
+        padding: 0.5rem;
+        text-transform: $text-case;
+        color: $text-colour;
+        font-family: $heading-font;
+        letter-spacing: $text-case
+    }
+    .logo-img{
+        width: 70px;
+        height: 70px;
+        filter: invert(80%) sepia(48%) saturate(4124%) hue-rotate(312deg) brightness(100%) contrast(92%);
+    }
+}
+
+/* Medium Devices (Tablets) */
+@media only screen and (min-width: 600px) and (max-width: 992px){
+    footer{
+        height: 15vh;
+    }
+}
+
+/* Large Devices (Laptop/Desktop) */
+@media only screen and (min-width: 992px) and (max-width: 1920px){
+    footer{
+        height: 15vh;
+    }
+}
